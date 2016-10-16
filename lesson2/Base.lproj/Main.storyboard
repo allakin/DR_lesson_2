@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4I-ey-xWS">
+                                <color key="backgroundColor" red="0.56505406633653499" green="0.89657351342996006" blue="1" alpha="0.14259159482758621" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="CN6-8c-Wtt"/>
+                                    <constraint firstAttribute="height" constant="284" id="LaJ-Yj-DRn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tx-XA-cId">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="1wv-55-Ecz"/>
+                                    <constraint firstAttribute="height" constant="30" id="tIl-IZ-7bH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Рандомно"/>
+                                <connections>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ga-lH-o26"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2Z-GL-7db">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xqe-aq-aHr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pck-U4-wmX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="GZQ-m4-9nq"/>
+                                    <constraint firstAttribute="height" constant="30" id="GoX-Ep-Q2c"/>
+                                </constraints>
+                                <state key="normal" title="Одна картинка"/>
+                                <connections>
+                                    <action selector="oneImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kr3-ei-0VF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l2Z-GL-7db" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DWd-FG-9Bb"/>
+                            <constraint firstItem="l2Z-GL-7db" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jwq-R7-CcS"/>
+                            <constraint firstItem="l2Z-GL-7db" firstAttribute="top" secondItem="Y4I-ey-xWS" secondAttribute="bottom" constant="47" id="LZ7-in-f4P"/>
+                            <constraint firstItem="Y4I-ey-xWS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Pa2-5m-hlT"/>
+                            <constraint firstItem="pck-U4-wmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEE-8k-cgp"/>
+                            <constraint firstItem="pck-U4-wmX" firstAttribute="top" secondItem="0tx-XA-cId" secondAttribute="bottom" constant="33" id="cEz-aB-N8O"/>
+                            <constraint firstItem="pck-U4-wmX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="163.5" id="iBo-je-Yns"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y4I-ey-xWS" secondAttribute="trailing" constant="-16" id="kg3-dL-xxi"/>
+                            <constraint firstItem="Y4I-ey-xWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="l3J-5q-rfb"/>
+                            <constraint firstItem="0tx-XA-cId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9L-h6-2JR"/>
+                            <constraint firstItem="0tx-XA-cId" firstAttribute="top" secondItem="l2Z-GL-7db" secondAttribute="bottom" constant="39" id="t5u-h2-0BT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageLabel" destination="Y4I-ey-xWS" id="5lt-bz-SNk"/>
+                        <outlet property="nameLabel" destination="l2Z-GL-7db" id="TmK-ke-AWq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
